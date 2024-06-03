@@ -1,6 +1,6 @@
 #define MAIN_VERSION_MAJOR @MAIN_VERSION_MAJOR@
 #define MAIN_VERSION_MINOR @MAIN_VERSION_MINOR@
-
+#cmakedefine USE_ADDER
 #ifdef USE_ADDER
     #include <adder.h>
 #endif

@@ -5,8 +5,9 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-
+#ifdef USE_ADDER
     cout << adder(1, 2) << endl;
+#endif
     cout<<"Hello, World!\n";
     cout<<argv[0]<<" VERSION :"<<MAIN_VERSION_MAJOR <<"."<<MAIN_VERSION_MINOR <<endl;
     GLFWwindow *window;
