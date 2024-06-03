@@ -21,6 +21,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: 'recursive' # Hoặc 'true' nếu bạn không cần đệ quy
+        token: ${{ secrets.GITHUB_TOKEN }} # Đảm bảo rằng bạn đã cấu hình token này
     
     - name: Create Build Directory
       run: mkdir -p build/
