@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.13)
 
 project(MAIN VERSION 1.0.0)
 
-add_executable(${PROJECT_NAME} main.cpp)
-
 option(USE_ADDER "Use adder" ON)
 if(USE_ADDER)
     add_subdirectory(adder_folder)
@@ -16,6 +14,7 @@ endif()
 
 configure_file(MAINconfig.h.in MAINconfig.h)
 
+add_executable(${PROJECT_NAME} main.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 
