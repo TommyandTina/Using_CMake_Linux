@@ -1,13 +1,14 @@
 #include <iostream>
-#include <adder.h>
 #include <GLFW/glfw3.h>
+#include <MAINconfig.h>
 
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
+
     cout << adder(1, 2) << endl;
     cout<<"Hello, World!\n";
-
+    cout<<argv[0]<<" VERSION :"<<MAIN_VERSION_MAJOR <<"."<<MAIN_VERSION_MINOR <<endl;
     GLFWwindow *window;
     if( !glfwInit() )
     {
