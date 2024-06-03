@@ -27,7 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y wayland-scanner pkg-config libx11-dev libxkbcommon-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev doxygen mesa-common-dev
+        sudo apt-get install -y wayland-protocols libwayland-dev pkg-config libx11-dev libxkbcommon-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev doxygen mesa-common-dev
     
     - name: Create Build Directory
       run: mkdir -p build/
