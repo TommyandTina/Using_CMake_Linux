@@ -1,3 +1,5 @@
+//file này để tạo ra MAINconfig.h (do ta cài đặt trong configuration_file)
+//@MAIN_VERSION_MAJOR@ sẽ được cmake chuyển từ project_name_VERSION_MAJOR thành 1
 #define MAIN_VERSION_MAJOR @MAIN_VERSION_MAJOR@
 #define MAIN_VERSION_MINOR @MAIN_VERSION_MINOR@
 #cmakedefine USE_ADDER
